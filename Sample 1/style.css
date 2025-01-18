@@ -10,7 +10,7 @@ body {
 }
 
 .main-container {
-    height: 86vh;
+    /* height: 86vh; */
     width: 92vw;
     margin: 7vh 4vw 7vh 4vw;
     border-radius: 15px;
@@ -126,7 +126,7 @@ nav {
 
     /* background: #000; */
     border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    /* border-bottom-left-radius: 15px; */
     border: 1px solid lightgrey;
     position: relative;
 }
@@ -179,6 +179,7 @@ p.nav-headers {        /* The h6 headings */
 
 .nav-middle {
     padding: 25px;
+    height: 50vh;
 }
 
 .nav-middle div {
@@ -206,10 +207,6 @@ p.nav-headers {        /* The h6 headings */
 }
 
 .nav-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
 
     padding: 25px;
     border-top: 1px solid lightgrey;
@@ -375,13 +372,36 @@ main {
 
 .card .card-credentials {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    align-items: center;
 
     margin-top: 10px;
     color: lightgrey;
     font-size: 12px;
 }
 
-.card-credentials .views {
+.card-credentials .credentials-rightpart .views {
     padding-right: 8px;
+}
+
+.card-credentials .credentials-rightpart i {
+    padding-right: 2px;
+}
+
+.credentials-rightpart {
+    display: flex;
+}
+
+.persons-viewed {
+    display: flex;
+    
+}
+
+.persons-viewed img {
+    width: 30px;
+    border-radius: 100%;
+    margin-bottom: 0;
+    border: 1px solid white;
+
+    margin-left: -10px;
 }
