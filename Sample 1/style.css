@@ -26,6 +26,7 @@ body {
     border-bottom-right-radius: 15px;
     margin-left: 20%;
     overflow-y: scroll;
+    
 }
 
 
@@ -127,7 +128,7 @@ nav {
     width: 20%;
     /* background: #000; */
     border-top-left-radius: 15px;
-    /* border-bottom-left-radius: 15px; */
+    border-bottom-left-radius: 15px;
     border: 1px solid lightgrey;
     position: absolute;
     left:0;
@@ -207,7 +208,6 @@ p.nav-headers {        /* The h6 headings */
     font-weight: bold;
 }
 .nav-middle ul li i {
-    position: relative;
     bottom: 20px;
     padding: 5px;
     margin-right: 1rem;
