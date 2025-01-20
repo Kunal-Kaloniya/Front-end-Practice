@@ -15,7 +15,6 @@ body {
     height: 100vh;
     margin: 7vh 4vw 7vh 4vw;
     border-radius: 15px;
-
     background: white;
     position: relative;
     display: flex;
@@ -126,7 +125,6 @@ header {
 nav {
     height: 100%;
     width: 20%;
-
     /* background: #000; */
     border-top-left-radius: 15px;
     /* border-bottom-left-radius: 15px; */
@@ -200,6 +198,8 @@ p.nav-headers {        /* The h6 headings */
 
 .nav-middle ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 .nav-middle ul li {
     padding: 8px 0 8px 0;
