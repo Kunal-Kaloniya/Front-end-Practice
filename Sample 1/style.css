@@ -12,11 +12,12 @@ body {
 .main-container {
     /* height: 86vh; */
     width: 92vw;
+    height: 100vh;
     margin: 7vh 4vw 7vh 4vw;
     border-radius: 15px;
 
     background: white;
-
+    position: relative;
     display: flex;
 }
 
@@ -24,6 +25,8 @@ body {
     width: 100%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    margin-left: 20%;
+    overflow-y: scroll;
 }
 
 
@@ -128,7 +131,11 @@ nav {
     border-top-left-radius: 15px;
     /* border-bottom-left-radius: 15px; */
     border: 1px solid lightgrey;
-    position: relative;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 30;
+    background-color: white;
 }
 
 .nav-top {
@@ -200,6 +207,8 @@ p.nav-headers {        /* The h6 headings */
     font-weight: bold;
 }
 .nav-middle ul li i {
+    position: relative;
+    bottom: 20px;
     padding: 5px;
     margin-right: 1rem;
     border-radius: 5px;
