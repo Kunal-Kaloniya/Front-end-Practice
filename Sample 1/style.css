@@ -5,25 +5,15 @@
 }
 
 body {
-    background: lightgrey;
+    background: white;
     font-family: sans-serif;
 }
 
-.main-container {
-    /* height: 86vh; */
-    width: 92vw;
-    margin: 7vh 4vw 7vh 4vw;
-    border-radius: 15px;
-
-    background: white;
-
-    display: flex;
-}
-
 .header-main-container {
-    width: 100%;
+    width: 80%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    margin-left: 20%;
 }
 
 
@@ -124,11 +114,14 @@ nav {
     height: 100%;
     width: 20%;
 
-    /* background: #000; */
+    background: #fff;
     border-top-left-radius: 15px;
     /* border-bottom-left-radius: 15px; */
     border: 1px solid lightgrey;
-    position: relative;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .nav-top {
@@ -207,9 +200,12 @@ p.nav-headers {        /* The h6 headings */
 }
 
 .nav-bottom {
-
     padding: 25px;
     border-top: 1px solid lightgrey;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .nav-bottom img {
