@@ -1,0 +1,247 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    margin-top: 20vh;
+}
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100vw;
+    height: 10vh;
+    padding: 0 5rem 0 5rem;
+    background-color: #fff;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-left, .header-middle {
+    flex-grow: 1000;
+}
+
+.header-middle {
+    display: flex;
+    align-items: center;
+}
+
+.header-middle .input-container {
+    width: 400px;
+    min-width: 100px;
+    max-width: 400px;
+    height: 50px;
+    border-bottom: 1px solid grey;
+
+    display: flex;
+    align-items: center;
+}
+
+.header-middle .input-container input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.header-middle .input-container i {
+    padding-right: 8px;
+    color: grey;
+}
+
+.header-middle ul {
+    list-style: none;
+    display: flex;
+}
+
+.header-middle ul li {
+    padding: 0 2rem 0 2rem;
+    cursor: pointer;
+}
+
+.header-middle ul li i {
+    margin-right: 8px;
+    border-radius: 100%;
+}
+
+.header-right {
+    flex-grow: 1;
+}
+
+
+
+
+
+main {
+    width: 100vw;
+    padding: 0 5rem 0 5rem;
+    gap: 5rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.main-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 50vw;
+}
+
+.main-left img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+.main-left .slider {
+    display: flex;
+    gap: 1rem;
+}
+
+.main-left .slider .circle {
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgb(255, 101, 127);
+    border-radius: 5px;
+}
+
+.main-left .slider .c2 {
+    background: rgb(255, 101, 127);
+}
+
+.main-right {
+    display: flex;
+    flex-direction: column;
+
+    width: 30vw;
+}
+
+.main-right > .item-title {
+    line-height: 2rem;
+}
+
+.main-right > .item-title > .title {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main-right > .item-title > ul.rating {
+    list-style: none;
+
+    display: flex;
+    font-size: 12px;
+    gap: 0.5rem;
+}
+
+.star1, .star2,
+.star3, .star4 {
+    color: rgb(255, 101, 127);
+}
+
+.main-right > .item-details {
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.details-line-1,
+.details-line-2,
+.details-line-3 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    position: relative;
+}
+
+.details-line-1 > .price,
+.details-line-2 > .price,
+.details-line-3 > .tenure {
+    position: absolute;
+    left: 10rem;
+}
+
+.details-line-3 > hr {
+    position: absolute;
+    left: 10rem;
+    width: 150px;
+    border: none;
+    height: 1px;
+    background-color: black;
+}
+
+.details-line-3 > .tenure {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.details-line-3 > .tenure > .tenure-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+    background: white;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+.details-line-3 > .tenure > .tb2 {
+    background-color: rgb(255, 101, 127);
+    border-color: rgb(255, 101, 127);
+    color: white;
+}
+
+.details-line-4 {
+    line-height: 1.2rem;
+}
+
+.details-line-4 > a {
+    color: rgb(255, 101, 127);
+    text-decoration: none;
+}
+
+.main-right > .buttons {
+    margin-top: 3rem;
+    display: flex;
+    gap: 10px;
+}
+
+.buttons > button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-weight: bold;
+}
+
+button.btn-1 {
+    background: white;
+    border: 2px solid black;
+}
+
+button.btn-2 {
+    background: rgb(255, 101, 127);
+    color: white;
+}
